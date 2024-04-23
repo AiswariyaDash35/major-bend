@@ -8,6 +8,6 @@ router.route("/login").post(loginUser);
 router.route("/farmers").get(getFarmers);
 router.route("/millers").get(getMillers);
 router.route("/getUserDetails/:userAddress").get(getUserDetails);
-router.route("/forgot-password").put(validateToken,updatePassword);
+router.route("/forgot-password").put(updatePassword);
 
 export {router};
