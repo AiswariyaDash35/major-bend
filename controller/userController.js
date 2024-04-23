@@ -5,7 +5,7 @@ import { loginUser, registerUser, getFarmers, getMillers, getUserDetails, update
 const router=express.Router();
 router.route("/register").post(registerUser);
 router.route("/login").post(loginUser);
-router.route("/farmers").get(validateToken,getFarmers);
+router.route("/farmers").get(getFarmers);
 router.route("/millers").get(getMillers);
 router.route("/getUserDetails/:userAddress").get(getUserDetails);
 router.route("/forgot-password").put(validateToken,updatePassword);
